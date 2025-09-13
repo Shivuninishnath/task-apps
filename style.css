@@ -1,0 +1,28 @@
+:root{ --bg:#f7f8fa; --card:#fff; --muted:#666; --accent:#2f80ed; }
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:var(--bg); margin:0}
+.app{max-width:900px;margin:24px auto;padding:10px}
+.app-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.app-header h1{margin:0}
+.user-area{display:flex;gap:8px;align-items:center}
+.user-email{color:var(--muted);font-size:14px}
+.btn{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.danger{background:#ff4d4f}
+.link{background:none;border:none;color:var(--accent);cursor:pointer}
+.auth-card{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 4px 14px rgba(19,19,28,0.06)}
+.auth-form label{display:block;margin-bottom:8px}
+.auth-form input{width:100%;padding:8px;margin-top:6px;border:1px solid #e6e9ef;border-radius:6px}
+.error{color:#d93025;margin:8px 0}
+.task-area{background:var(--card);padding:16px;border-radius:8px}
+.task-form{display:flex;gap:8px;margin-bottom:12px}
+.task-form input{flex:1;padding:8px;border:1px solid #e6e9ef;border-radius:6px}
+.form-actions{display:flex;gap:8px}
+.task-list{list-style:none;padding:0;margin:0}
+.task-item{display:flex;align-items:center;justify-content:space-between;padding:10px;border-bottom:1px solid #f1f3f6}
+.task-item .left{display:flex;align-items:center;gap:10px}
+.task-item .title{font-weight:600}
+.task-item .desc{font-size:13px;color:var(--muted)}
+.task-item.done .title{text-decoration:line-through;color:var(--muted)}
+.empty{padding:16px;color:var(--muted)}
+.footer{text-align:center;margin-top:12px;color:var(--muted)}
